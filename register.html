@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Social Networking Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Register</h1>
+    </header>
+    <main>
+        <section id="register">
+<form id="register-form" onsubmit="return validateRegistration()">
+    <label for="new-username">Username:</label>
+    <input type="text" id="new-username" name="new-username" required>
+    <label for="new-email">Email:</label>
+    <input type="email" id="new-email" name="new-email" required>
+    <label for="new-password">Password:</label>
+    <input type="password" id="new-password" name="new-password" required>
+    <button type="submit" onclick="animateTransition()">Register</button>
+</form>
+            <p>Already have an account? <a href="login.html">Login here</a></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Social Networking Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>

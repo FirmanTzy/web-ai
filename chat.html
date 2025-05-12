@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat - Social Networking Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">Facebook</div>
+        <nav>
+            <ul>
+                <li><a href="login.html">Log In</a></li>
+                <li><a href="register.html">Sign Up</a></li>
+                <li><a href="chat.html">Chat</a></li>
+                <li><a href="call.html">Call</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="chat-container">
+            <aside class="sidebar">
+                <h3>Contacts</h3>
+                <ul id="contact-list">
+                    <li>Friend 1</li>
+                    <li>Friend 2</li>
+                    <li>Friend 3</li>
+                </ul>
+            </aside>
+            <div class="chat">
+                <h2>Chat</h2>
+                <div id="chat-window">
+                    <div id="messages">
+                        <!-- Messages will be displayed here -->
+                    </div>
+                    <input type="text" id="chat-input" placeholder="Type a message...">
+                    <input type="file" id="file-input" accept="image/*, .pdf, .doc, .docx" />
+                    <button onclick="sendMessage()">Send</button>
+                </div>
+            </div>
+
+    </main>
+    <footer>
+        <p>&copy; 2023 Social Networking Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>

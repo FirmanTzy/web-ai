@@ -1,0 +1,157 @@
+/* Basic styling for the social networking website */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e9eff1;
+    /* Start with slide-in animation */
+    animation: slideIn 0.5s forwards;
+}
+
+header {
+    background-color: #4267B2;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-content {
+    display: flex;
+    padding: 20px;
+}
+
+.feed {
+    flex: 3;
+    margin-right: 20px;
+}
+
+.sidebar {
+    flex: 1;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.feed h2, .sidebar h2 {
+    margin: 0 0 10px;
+}
+
+.post {
+    margin-bottom: 20px;
+}
+
+.post textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.post button {
+    background-color: #1877f2;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.post button:hover {
+    background-color: #155a8a;
+}
+
+.post-list {
+    margin-top: 20px;
+}
+
+.post-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4267B2;
+    color: white;
+}
+
+header {
+    background-color: #4267B2;
+    color: white;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4267B2;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Slide-in animation */
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Slide-out animation */
+@keyframes slideOut {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+/* Class to trigger slide-out animation */
+.slide-out {
+    animation: slideOut 0.5s forwards;
+}
